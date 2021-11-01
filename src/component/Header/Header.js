@@ -3,10 +3,14 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import UseAuth from "../../hooks/useAuth";
 import "./Header.css";
+import { useHistory, useLocation } from "react-router";
+import Button from "@restart/ui/esm/Button";
 
 const Header = () => {
   const { user, logout } = UseAuth();
-  console.log(user);
+  const history = useHistory();
+  const location = useLocation();
+  const { from } = location.state || { from: { pathname: "/" } };
   return (
     <>
       <Navbar bg="dark" variant="dark" className="navbar">
@@ -22,7 +26,8 @@ const Header = () => {
               <Link to="/pricing">Deals</Link>
               <Link to="/admin">Admin</Link>
               <Link to="/about">About</Link>
-              {user?.email ? "" : <Link to="/login">Login</Link>}
+              
+              {!user.email && <Link to="/login"><Button variant="outline-primary" className="mx-3 nav-signin-button">Sign In</Button>   </Link>}
             </div>
           </Nav>
           <Nav className="ml-auto">
