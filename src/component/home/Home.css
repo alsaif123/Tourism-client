@@ -1,0 +1,21 @@
+.home{
+    background-image: url(https://i.ibb.co/nCkZWjZ/gF4rTDP.jpg);
+    height: 70vh;
+ 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.home h1{
+    letter-spacing: 8px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(243, 241, 239);
+    font-size: 3rem;
+    text-align: center;
+}

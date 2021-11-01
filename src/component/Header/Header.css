@@ -1,0 +1,17 @@
+.navbar{
+    height: 80px;
+}
+.header a{
+    margin-right: 10px;
+    text-decoration: none; 
+
+}
+.userAvatar{
+    height: 100%;
+    cursor: pointer;
+}
+.userAvatar>img{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
