@@ -11,6 +11,7 @@ import Footer from "./component/Footer/Footer";
 import About from "./component/About/About";
 import Admin from "./component/Admin/Admin";
 import AddPlaces from "./component/Admin/AddPlaces";
+import PlaceDetails from "./component/PlaceDetails";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
             </Route>
             <PrivateRoute path="/admin">
               <Admin />
+            </PrivateRoute>
+            <PrivateRoute path="/placeDetails/:id">
+             <PlaceDetails/>
             </PrivateRoute>
             <Route path="/addPlaces">
               <AddPlaces />

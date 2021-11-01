@@ -1,6 +1,7 @@
 import Button from "@restart/ui/esm/Button";
 import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Place = ({place}) => {
 const {placeName,img,description,cost}=place;
@@ -21,7 +22,10 @@ const {placeName,img,description,cost}=place;
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <Button>Details</Button>
+          <Link to={`/placeDetails/${place._id}`}>
+          Details 
+          </Link>
+          
         </Card.Footer>
       </Card>
     </>
