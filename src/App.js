@@ -34,7 +34,7 @@ function App() {
               <Login />
             </Route>
             <PrivateRoute path="/admin">
-              <Admin />
+              <AddPlaces/>
             </PrivateRoute>
             <PrivateRoute path="/placeDetails/:id">
              <PlaceDetails/>

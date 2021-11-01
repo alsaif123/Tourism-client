@@ -25,7 +25,7 @@ const AddPlaces = () => {
   
       axios
         .post(
-          "http://localhost:5000/addPlaces",
+          "https://powerful-dusk-92883.herokuapp.com/addPlaces",
           placeInfo
         )
         .then((res) => {

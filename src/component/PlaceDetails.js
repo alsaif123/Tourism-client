@@ -7,7 +7,7 @@ const PlaceDetails = () => {
   const { id } = useParams();
   console.log(id);
   useEffect(() => {
-    fetch("http://localhost:5000/getPlaces")
+    fetch("https://powerful-dusk-92883.herokuapp.com/getPlaces")
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
