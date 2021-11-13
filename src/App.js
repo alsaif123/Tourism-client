@@ -9,7 +9,6 @@ import NotFound from "./component/NotFound/NotFound";
 import AuthProvider from "./context/AuthProvider";
 import Footer from "./component/Footer/Footer";
 import About from "./component/About/About";
-import Admin from "./component/Admin/Admin";
 import AddPlaces from "./component/Admin/AddPlaces";
 import PlaceDetails from "./component/PlaceDetails";
 
