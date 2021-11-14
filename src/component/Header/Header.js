@@ -13,21 +13,54 @@ const Header = () => {
   const { from } = location.state || { from: { pathname: "/" } };
   return (
     <>
-      <Navbar bg="dark" variant="dark" className="navbar">
+      <Navbar bg="bg-info" variant="info" className="navbar">
         <Container>
-          <Link className="nav-brand" to="/home">
+          <Link
+            className="nav-brand text-black"
+            to="/home"
+            style={{
+              textDecoration: "none",
+              textTransform: "uppercase",
+              fontSize: "24px",
+              fontWeight: "700",
+            }}
+          >
             Tourist
           </Link>
 
           <Nav className="ml-auto">
             <div className="header">
-              <Link to="/home">Home</Link>
-              <Link to="/features">services</Link>
-              <Link to="/pricing">Deals</Link>
-              <Link to="/admin">Admin</Link>
-              <Link to="/about">About</Link>
-              
-              {!user.email && <Link to="/login"><Button variant="outline-primary" className="mx-3 nav-signin-button">Sign In</Button>   </Link>}
+              <Link to="/home" className="text-black px-3">
+                Home
+              </Link>
+              <a href="#places" className="text-black px-3">
+               Places
+              </a>
+              <Link to="/pricing" className="text-black px-3">
+                Deals
+              </Link>
+              <Link to="/admin" className="text-black px-3">
+                Admin
+              </Link>
+              <Link to="/about" className="text-black px-3">
+                About
+              </Link>
+              <a href="#ourteam" className="text-black px-3">
+                Our Team
+              </a>
+              <a href="#ourapp" className="text-black px-3">
+                Our App
+              </a>
+              {!user.email && (
+                <Link to="/login">
+                  <Button
+                    variant="outline-primary"
+                    className="mx-3 nav-signin-button"
+                  >
+                    Sign In
+                  </Button>{" "}
+                </Link>
+              )}
             </div>
           </Nav>
           <Nav className="ml-auto">

@@ -13,7 +13,7 @@ const Places = () => {
       });
   }, []);
   return (
-    <div className="container py-5  text-center">
+    <div id="places" className="container py-5  text-center">
       <h2>Places you can visit</h2>
       <div className="row m-3">
         {places.length !== 0 ? (
