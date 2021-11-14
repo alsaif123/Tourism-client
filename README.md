@@ -1,6 +1,6 @@
 # Project name: Tourism
 
-It's a MERN stack practice project.
+It's a MERN stack practice project. Your tour mate is now toursim bd
 
 ### Client side code : 
 <a href="https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-alsaif123">Link</a>
